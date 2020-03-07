@@ -1,0 +1,8 @@
+1583587361a:1:{s:9:"index.htm";a:7:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:150:"[viewBag]
+title = "Главная"
+url = "/"
+layout = "default"
+is_hidden = 0
+navigation_hidden = 0
+==
+<h3>Главная страница</h3>";s:5:"mtime";i:1583584334;s:6:"markup";s:40:"<h3>Главная страница</h3>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:40:"<h3>Главная страница</h3>";}}

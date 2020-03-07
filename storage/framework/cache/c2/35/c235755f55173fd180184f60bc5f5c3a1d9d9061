@@ -1,0 +1,12 @@
+1583587361a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:161:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} Мой Сайт.</p>
+    </div>
+</div>
+";s:5:"mtime";i:1583584681;s:6:"markup";s:160:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} Мой Сайт.</p>
+    </div>
+</div>";s:4:"code";N;}}

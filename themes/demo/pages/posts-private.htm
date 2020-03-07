@@ -1,0 +1,26 @@
+title = "Posts private"
+url = "/posts-private"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[newsPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "Отсутсвие постов"
+sortOrder = "published_at desc"
+postFeatured = 0
+categoryFilter = "{{ tolko-dlya-avtorizovannym }}"
+postPage = "post"
+categoryPage = 404
+==
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% component 'newsPosts' cat=1 %}
+        </div>
+    </div>
+</div>

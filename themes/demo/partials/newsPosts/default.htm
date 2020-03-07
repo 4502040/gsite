@@ -1,0 +1,50 @@
+==
+{% set posts = __SELF__.posts %}
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-6">
+        <div class="post-list">
+            {% for post in posts %}
+
+            {% if ((post.category.id==2 and this.page.id == 'posts-public')
+            or (post.category.id==1 and this.page.id == 'posts-private')
+            ) %}
+            <div class="post-item">
+
+                {% if post.image %}
+                <div class="post-image">
+                    <a href="/{{ postPage }}/{{ post.slug }}">
+                        <img src="{{ post.image|media }}" alt="{{ post.title }}" width="300px">
+
+                    </a>
+                </div>
+                {% endif %}
+
+                <h3 class="post-title"><a href="/{{ postPage }}/{{ post.slug }}">{{ post.title }}</a></h3>
+                <p class="post-date"><i class="icon icon-calendar"> </i> {{ post.published_at|date('d.m.Y') }}</p>
+                {#
+                {% if post.tags %}
+                <p class="post-tags">Tags:
+                    {% for tag in post.tags %}
+                    <a href="{{ 'blog'|page }}/tag/{{ tag }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+                    {% endfor %}
+                </p>
+                {% endif %}
+
+                {% if post.introductory %}
+                <div class="post-introductory">{{ post.introductory|raw }}</div>
+                {% elseif post.content %}
+                <div class="post-content">{{ post.content|raw }}</div>
+                {% endif %}
+
+                #}
+            </div>
+
+            {% endif %}
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{{ posts.render|raw }}

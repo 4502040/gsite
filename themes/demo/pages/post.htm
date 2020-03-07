@@ -1,0 +1,16 @@
+title = "Post"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[newsPost]
+slug = "{{ :slug }}"
+==
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% component 'newsPost' %}
+        </div>
+    </div>
+</div>

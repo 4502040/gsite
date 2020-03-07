@@ -1,0 +1,106 @@
+1583587361a:1:{s:20:"account/register.htm";a:5:{s:8:"fileName";s:20:"account/register.htm";s:7:"content";s:1650:"{% if canRegister %}
+    <h3>Регистрация</h3>
+
+    {{ form_ajax('onRegister') }}
+
+        <div class="form-group">
+            <label for="registerName">Полное имя</label>
+            <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="registerName"
+                placeholder="Имя Фамилия" />
+        </div>
+
+        <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="registerEmail"
+                placeholder="Введите email" />
+        </div>
+
+        {% if loginAttribute == "username" %}
+            <div class="form-group">
+                <label for="registerUsername">Username</label>
+                <input
+                    name="username"
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    placeholder="Enter your username" />
+            </div>
+        {% endif %}
+
+        <div class="form-group">
+            <label for="registerPassword">Пароль</label>
+            <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="registerPassword"
+                placeholder="Напишите пароль" />
+        </div>
+
+        <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+
+    {{ form_close() }}
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}
+";s:5:"mtime";i:1583570807;s:6:"markup";s:1649:"{% if canRegister %}
+    <h3>Регистрация</h3>
+
+    {{ form_ajax('onRegister') }}
+
+        <div class="form-group">
+            <label for="registerName">Полное имя</label>
+            <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="registerName"
+                placeholder="Имя Фамилия" />
+        </div>
+
+        <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="registerEmail"
+                placeholder="Введите email" />
+        </div>
+
+        {% if loginAttribute == "username" %}
+            <div class="form-group">
+                <label for="registerUsername">Username</label>
+                <input
+                    name="username"
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    placeholder="Enter your username" />
+            </div>
+        {% endif %}
+
+        <div class="form-group">
+            <label for="registerPassword">Пароль</label>
+            <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="registerPassword"
+                placeholder="Напишите пароль" />
+        </div>
+
+        <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+
+    {{ form_close() }}
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}";s:4:"code";N;}}

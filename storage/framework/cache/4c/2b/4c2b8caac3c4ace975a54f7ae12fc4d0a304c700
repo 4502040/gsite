@@ -1,0 +1,25 @@
+1583587361a:1:{s:28:"account/activation_check.htm";a:5:{s:8:"fileName";s:28:"account/activation_check.htm";s:7:"content";s:430:"<div class="row">
+    <div class="col-md-12">
+        {% if not user.is_activated %}
+
+        <h3>Your email address has not yet been verified.</h3>
+        <p>
+            You should verify your account otherwise it may be deleted. Please check your email to verify.
+            <a href="javascript:;" data-request="onSendActivationEmail">Send the verification email again</a>.
+        </p>
+
+        {% endif %}
+    </div>
+</div>";s:5:"mtime";i:1583572472;s:6:"markup";s:430:"<div class="row">
+    <div class="col-md-12">
+        {% if not user.is_activated %}
+
+        <h3>Your email address has not yet been verified.</h3>
+        <p>
+            You should verify your account otherwise it may be deleted. Please check your email to verify.
+            <a href="javascript:;" data-request="onSendActivationEmail">Send the verification email again</a>.
+        </p>
+
+        {% endif %}
+    </div>
+</div>";s:4:"code";N;}}

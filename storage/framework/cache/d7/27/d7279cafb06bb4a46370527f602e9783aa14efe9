@@ -1,0 +1,15 @@
+1583587361a:1:{s:10:"denied.htm";a:8:{s:8:"fileName";s:10:"denied.htm";s:7:"content";s:351:"title = "Доступ запрещен"
+url = "/denied"
+layout = "default"
+==
+<div class="jumbotron">
+    <div class="container">
+        <h1>Доступ запрещен</h1>
+        <p>К сожалению, запрашиваемая страница доступна только вошедшим пользователям.</p>
+    </div>
+</div>";s:5:"mtime";i:1583573691;s:6:"markup";s:273:"<div class="jumbotron">
+    <div class="container">
+        <h1>Доступ запрещен</h1>
+        <p>К сожалению, запрашиваемая страница доступна только вошедшим пользователям.</p>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:29:"Доступ запрещен";s:3:"url";s:7:"/denied";s:6:"layout";s:7:"default";}}

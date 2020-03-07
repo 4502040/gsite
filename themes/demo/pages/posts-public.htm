@@ -1,0 +1,29 @@
+title = "Posts public"
+url = "/posts-public"
+layout = "default"
+is_hidden = 0
+
+[newsPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "Отсутсвие постов"
+sortOrder = "published_at desc"
+postFeatured = 0
+categoryFilter = "{{dostupno-vsem}}"
+postPage = "post"
+categoryPage = 404
+==
+<?php
+function onStart()
+{
+    //$this->page["components"]["newsPosts"]["properties"]["categoryFilter"] = "dostupno-vsem";
+}
+?>
+==
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% component 'newsPosts' %}
+        </div>
+    </div>
+</div>
