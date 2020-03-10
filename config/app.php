@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://gsite/',
+    'url' => env('APP_URL', 'http://gsite/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    'key' => 'iWibC8hBsqxJwcU53Bu7TDiR3u5hz7sr',
+    'key' => env('APP_KEY', ''),
 
     'cipher' => 'AES-256-CBC',
 
